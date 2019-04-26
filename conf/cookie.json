@@ -1,0 +1,17 @@
+{
+    "desc": "公众号cookie配置",
+    "list": [
+        {
+            "appid": "wxc757bebdc4d092e0",
+            "name": "田赋折扣店",
+            "token": "4063880830",
+            "cookie": "RK=jAqBgcXkc4; ptcz=ea61ee9dea5e17ac7b430d1f1a81db8f00bf2c9ffd261896f56b5eacb29fdddd; pgv_pvi=8743832576; ua_id=EReT4BfQJwMWht7gAAAAAM5Xj3I6V5JI6vh-BSayLag=; _ga=GA1.2.1025240501.1536112109; mm_lang=zh_CN; sd_userid=55661536205679969; sd_cookie_crttime=1536205679969; pgv_pvid=4996833538; ts_uid=9190523027; xid=8841113ff0a2ab00bad9d1dbd581f24d; tvfe_boss_uuid=d0ea5e5fc70dfb40; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%22169a0d61edbcf-03758154661cf-1e386655-1296000-169a0d61edc477%22%2C%22%24device_id%22%3A%22169a0d61edbcf-03758154661cf-1e386655-1296000-169a0d61edc477%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; pgv_si=s7235315712; pgv_info=ssid=s6122112354; ptisp=ctc; ptui_loginuin=1101222919; rewardsn=; wxtokenkey=777; skey=+; mmad_session=9381d01796b9e3738216c86715ec2d11b15679ac873536e390c5010053ffe7af2daebd0b37b21369a1f9fa746375ad90e51c63842297f82f7712d0eb01fc1db63c6a8b12d58f5605699dbb66dd0e646e6aa58f7254f58d3f414ca910b756b942b3308ea1f4b84ec77ed1a3813fe39933992080cc4b0aa3781de67cc649fc662adf82611350bd0b6fab2b1f622ccb955c; data_bizuin=3548985722; data_ticket=uvTNSgKoN3d3DN7QkU1YspOJoDcyfdPjMyLd065EiZwbQ/rN4VmHwGxw6AWYWz+6; sp_login_mark=155572390056012; ts_last=mp.weixin.qq.com/promotion/frame"
+        },
+        {
+            "appid": "wx16147e802c452f13",
+            "name": "奥莱欧精品商店",
+            "token": "1530480579",
+            "cookie": "RK=jAqBgcXkc4; ptcz=ea61ee9dea5e17ac7b430d1f1a81db8f00bf2c9ffd261896f56b5eacb29fdddd; pgv_pvi=8743832576; ua_id=EReT4BfQJwMWht7gAAAAAM5Xj3I6V5JI6vh-BSayLag=; _ga=GA1.2.1025240501.1536112109; mm_lang=zh_CN; sd_userid=55661536205679969; sd_cookie_crttime=1536205679969; pgv_pvid=4996833538; ts_uid=9190523027; xid=8841113ff0a2ab00bad9d1dbd581f24d; tvfe_boss_uuid=d0ea5e5fc70dfb40; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%22169a0d61edbcf-03758154661cf-1e386655-1296000-169a0d61edc477%22%2C%22%24device_id%22%3A%22169a0d61edbcf-03758154661cf-1e386655-1296000-169a0d61edc477%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; pgv_si=s7235315712; pgv_info=ssid=s6122112354; ptisp=ctc; ptui_loginuin=1101222919; rewardsn=; wxtokenkey=777; skey=+; mmad_session=eed23c4806eaac99b3181f9ad6c175cc875f7cebbea68b2d7a05a0d3e41150f77379a7f9f268670857ef837564dd6b82dd842fccb6d615974f5a72f5e088ad9718c29f4d0292aa9cfd8e1692df9e8b29d3ba813d4154fb4694e84f5b8adb972c3dae33cd3c2232283120f38bd302144a55f3d03668f6125f4c8463a238f900561e0417c05bae818fbd155aa7cd69690a; data_bizuin=3562792034; data_ticket=QGU61j9a1Ws94o/z047oEvrGSDa2qOfbwLXY9kxoYyYkJ7hyXruPH0ZYN4J9mZEo; sp_login_mark=155555940027342; ts_last=mp.weixin.qq.com/promotion/frame"
+        }
+    ]
+}

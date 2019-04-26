@@ -1,0 +1,554 @@
+// 创建计划
+Request URL: https://mp.weixin.qq.com/promotion/v3/create_campaign_info
+Request Method: POST
+
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+Connection: keep-alive
+Content-Length: 13430
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Cookie: RK=jAqBgcXkc4; ptcz=ea61ee9dea5e17ac7b430d1f1a81db8f00bf2c9ffd261896f56b5eacb29fdddd; pgv_pvi=8743832576; ua_id=EReT4BfQJwMWht7gAAAAAM5Xj3I6V5JI6vh-BSayLag=; _ga=GA1.2.1025240501.1536112109; mm_lang=zh_CN; sd_userid=55661536205679969; sd_cookie_crttime=1536205679969; pgv_pvid=4996833538; ts_uid=9190523027; xid=8841113ff0a2ab00bad9d1dbd581f24d; tvfe_boss_uuid=d0ea5e5fc70dfb40; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%22169a0d61edbcf-03758154661cf-1e386655-1296000-169a0d61edc477%22%2C%22%24device_id%22%3A%22169a0d61edbcf-03758154661cf-1e386655-1296000-169a0d61edc477%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; pgv_si=s7235315712; pgv_info=ssid=s6122112354; ptisp=ctc; ptui_loginuin=1101222919; rewardsn=; wxtokenkey=777; skey=+; ts_last=mp.weixin.qq.com/promotion/frame; mmad_session=9381d01796b9e3738216c86715ec2d11b15679ac873536e390c5010053ffe7af2daebd0b37b21369a1f9fa746375ad90e51c63842297f82f7712d0eb01fc1db63c6a8b12d58f5605699dbb66dd0e646e6aa58f7254f58d3f414ca910b756b94257a140e810d01f05104028992d97ee28992080cc4b0aa3781de67cc649fc662adf82611350bd0b6fab2b1f622ccb955c; data_bizuin=3548985722; data_ticket=F/tf8nudz/xa9ZKyrP3kkzIEqHuPpoXRmjnOD8JHa/f20yXFzqkEO34LOasNRFn7; sp_login_mark=155555980447832
+Host: mp.weixin.qq.com
+Origin: https://mp.weixin.qq.com
+Referer: https://mp.weixin.qq.com/promotion/frame?t=ad_system/common_simple_frame&t1=campaign/edit&token=2448821415&from_pos_type=999
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+X-Requested-With: XMLHttpRequest
+
+args: 
+{
+    "pos_type":999,
+    "product":{
+        "product_type":"PRODUCTTYPE_WECHAT_SHOP",
+        "product_id":"",
+        "product_info":""
+    },
+    "campaign":{
+        "cid":0,
+        "ctype":"CAMPAIGNTYPE_AUCTION",
+        "cname":"20190418-推广我的商品-朋友圈信息流-竞价购买广告", //产品名称
+        "end_time":1558108799, //投放开始时间
+        "begin_time":1555516800 //投放结束时间
+    },
+    "sub_product":{
+        "subordinate_product_id":"",
+        "product_type":"PRODUCTTYPE_WECHAT_SHOP",
+        "product_id":"",
+        "spname":""
+    },
+    "target_groups":[
+        {
+            "target_group":{
+                "mp_conf":"{"original_age":[14,66],"poi_show":0,"version":[],"city_level":3,"show_area":[3],"custom_poi":[],"ocpm_type":[0],"import_target_used":false,"dmp_type":"","selected_ocpm_item":{"bat_desc":"元/下单","bid_action_type":7,"bid_objective":7,"bo_desc":"获取更多下单量","max_bid":2000,"min_bid":0.5,"permission":1},"bid_action_type":"ocpm"}"
+            },
+            // 广告组
+            "ad_groups":[
+                {
+                    "ad_group":{
+                        "aid":0,
+                        "aname":"TESTAD1",
+                        "timeset":"",
+                        "product_id":"",
+                        "product_type":"PRODUCTTYPE_WECHAT_SHOP",
+                        "end_time":1558108799,
+                        "begin_time":1555516800,
+                        "strategy_opt":"{"bid_objective":7,"bid_action_type":7}",
+                        "bid":50,
+                        "budget":100000,
+                        "day_budget":100000,
+                        "contract_flag":2,
+                        "pos_type":999,
+                        "exposure_frequency":6,
+                        "poi":"",
+                        "expand_targeting_switch":"EXPAND_TARGETING_SWITCH_CLOSE",
+                        "expand_targeting_setting":"[]"
+                    },
+                    "ad_target":{
+                        "mid":0,
+                        "ad_behavior":"[{"in_action_list":[],"not_in_action_list":[]}]",
+                        "education":"[]",
+                        "device_price":"[]",
+                        "area":"["130100","130200","130300","130400","130500","130600","130700","130800","130900","131000","131100","140100","140200","140300","140400","140500","140600","140700","140800","140900","141000","141100","150100","150200","150300","150400","150500","150600","150700","150800","150900","152200","152500","152900","210300","210400","210500","210600","210700","210800","210900","211000","211100","211200","211300","211400","220100","220200","220300","220400","220500","220600","220700","220800","222400","230200","230300","230400","230500","230600","230700","230800","230900","231000","231100","231200","232700","320200","320300","320400","320600","320700","320800","320900","321000","321100","321200","321300","330300","330400","330500","330600","330700","330800","330900","331000","331100","340100","340200","340300","340400","340500","340600","340700","340800","341000","341100","341200","341300","341500","341600","341700","341800","350300","350400","350500","350600","350700","350800","350900","360100","360200","360300","360400","360500","360600","360700","360800","360900","361000","361100","370300","370400","370500","370600","370700","370800","370900","371000","371100","371200","371300","371400","371500","371600","371700","410200","410300","410400","410500","410600","410700","410800","410900","411000","411100","411200","411300","411400","411500","411600","411700","419001","420200","420300","420500","420600","420700","420800","420900","421000","421100","421200","421300","422800","429004","429005","429006","429021","430200","430300","430400","430500","430600","430700","430800","430900","431000","431100","431200","431300","433100","440200","440400","440500","440600","440700","440800","440900","441200","441300","441400","441500","441600","441700","441800","441900","442000","445100","445200","445300","450100","450200","450300","450400","450500","450600","450700","450800","450900","451000","451100","451200","451300","451400","460100","460200","460300","469001","469002","469003","469005","469006","469007","469021","469022","469023","469024","469025","469026","469027","469028","469029","469030","510300","510400","510500","510600","510700","510800","510900","511000","511100","511300","511400","511500","511600","511700","511800","511900","512000","513200","513300","513400","520100","520200","520300","520400","520500","520600","522300","522600","522700","530100","530300","530400","530500","530600","530700","530800","530900","532300","532500","532600","532800","532900","533100","533300","533400","540100","540200","542100","542200","542400","542500","542600","610200","610300","610400","610500","610600","610700","610800","610900","611000","620100","620200","620300","620400","620500","620600","620700","620800","620900","621000","621100","621200","622900","623000","630100","630200","632200","632300","632500","632600","632700","632800","640100","640200","640300","640400","640500","650100","650200","652100","652200","652300","652700","652800","652900","653000","653100","653200","654000","654200","654300","659001","659002","659003","659004","659005","659006","659007","659008","659009"]",
+                        "travel_area":"[]",
+                        "area_type":"area",
+                        "gender":"["MALE"]",
+                        "age":"["30~66"]",
+                        "device_brand_model":"[]",
+                        "businessinterest":"[]",
+                        "app_behavior":"{}",
+                        "os":"[]",
+                        "marriage_status":"[]",
+                        "wechatflowclass":"[]",
+                        "connection":"[]",
+                        "telcom":"[]",
+                        "payment":"[]",
+                        "custom_poi":"[]",
+                        "weapp_version":"{"min_ios_version":0,"min_android_version":0}",
+                        "oversea":"[]",
+                        "in_dmp_audience":"[]",
+                        "not_in_dmp_audience":"[]",
+                        "behavior_interest":"{}"
+                    }
+                }
+            ]
+        },
+        {
+            "target_group":{
+                "mp_conf":"{"original_age":[14,66],"poi_show":0,"version":[],"city_level":2,"show_area":[2],"custom_poi":[],"ocpm_type":[0],"import_target_used":false,"dmp_type":"","selected_ocpm_item":{"bat_desc":"元/点击","bid_action_type":2,"bid_objective":2,"bo_desc":"获取更多点击量","max_bid":50,"min_bid":0.5,"permission":1},"bid_action_type":"ocpm"}"
+            },
+            "ad_groups":[
+                {
+                    "ad_group":{
+                        "aid":0,
+                        "aname":"TESTAD2",
+                        "timeset":"",
+                        "product_id":"",
+                        "product_type":"PRODUCTTYPE_WECHAT_SHOP",
+                        "end_time":1558108799,
+                        "begin_time":1555516800,
+                        "strategy_opt":"{"bid_objective":2,"bid_action_type":2}",
+                        "bid":50,
+                        "budget":100000,
+                        "day_budget":100000,
+                        "contract_flag":2,
+                        "pos_type":999,
+                        "exposure_frequency":6,
+                        "poi":"",
+                        "expand_targeting_switch":"EXPAND_TARGETING_SWITCH_CLOSE",
+                        "expand_targeting_setting":"[]"
+                    },
+                    "ad_target":{
+                        "mid":0,
+                        "ad_behavior":"[{"in_action_list":[],"not_in_action_list":[]}]",
+                        "education":"[]",
+                        "device_price":"[]",
+                        "area":"["120000","210100","210200","230100","320100","320500","330100","330200","350100","350200","370100","370200","410100","420100","430100","440100","440300","500000","510100","610100"]",
+                        "travel_area":"[]",
+                        "area_type":"area",
+                        "gender":"[]",
+                        "age":"["30~66"]",
+                        "device_brand_model":"[]",
+                        "businessinterest":"[]",
+                        "app_behavior":"{}",
+                        "os":"[]",
+                        "marriage_status":"[]",
+                        "wechatflowclass":"[]",
+                        "connection":"[]",
+                        "telcom":"[]",
+                        "payment":"[]",
+                        "custom_poi":"[]",
+                        "weapp_version":"{"min_ios_version":0,"min_android_version":0}",
+                        "oversea":"[]",
+                        "in_dmp_audience":"[]",
+                        "not_in_dmp_audience":"[]",
+                        "behavior_interest":"{}"
+                    }
+                }
+            ]
+        }
+    ],
+    "expected_ret":0,
+    "materials":[
+        {
+            "tname":"创意-20190418",
+            "crt_size":666
+        }
+    ]
+}
+token: 2448821415
+appid: 
+spid: 
+_: 1555560328873
+
+
+// 更新计划
+Request URL: https://mp.weixin.qq.com/promotion/v3/update_campaign_info
+Request Method: POST
+
+args: 
+{
+    "pos_type":999,
+    "product":{
+        "product_id":"",
+        "product_info":""
+    },
+    "campaign":{
+        "cid":1845967806, //计划id
+        "cname":"TEST", //计划名称
+        "end_time":1558108799, //投放开始时间
+        "begin_time":1555516800 //投放结束时间
+    },
+    "sub_product":{
+        "subordinate_product_id":"",
+        "product_id":"",
+        "spname":""
+    },
+    "target_groups":[
+        {
+            "target_group":{
+                "mp_conf":"{"original_age":[14,66],"poi_show":0,"version":[],"city_level":3,"show_area":[3],"custom_poi":[],"ocpm_type":[0],"import_target_used":false,"dmp_type":"","selected_ocpm_item":{"bat_desc":"元/下单","bid_action_type":7,"bid_objective":7,"bo_desc":"获取更多下单量","max_bid":2000,"min_bid":0.5,"permission":1},"bid_action_type":"ocpm"}"
+            },
+            "ad_groups":[
+                {
+                    "ad_group":{
+                        "aid":1845967808,
+                        "aname":"TESTAD1",
+                        "timeset":"",
+                        "product_id":"",
+                        "end_time":1558108799,
+                        "begin_time":1555516800,
+                        "strategy_opt":"{"bid_objective":7,"bid_action_type":7}",
+                        "bid":50,
+                        "budget":100000,
+                        "day_budget":100000,
+                        "contract_flag":2,
+                        "pos_type":999,
+                        "exposure_frequency":6,
+                        "poi":"",
+                        "expand_targeting_switch":"EXPAND_TARGETING_SWITCH_CLOSE",
+                        "expand_targeting_setting":"[]"
+                    },
+                    "ad_target":{
+                        "mid":1845967807,
+                        "ad_behavior":"[{"in_action_list":[],"not_in_action_list":[]}]",
+                        "education":"[]",
+                        "device_price":"[]",
+                        "area":"["130100","130200","130300","130400","130500","130600","130700","130800","130900","131000","131100","140100","140200","140300","140400","140500","140600","140700","140800","140900","141000","141100","150100","150200","150300","150400","150500","150600","150700","150800","150900","152200","152500","152900","210300","210400","210500","210600","210700","210800","210900","211000","211100","211200","211300","211400","220100","220200","220300","220400","220500","220600","220700","220800","222400","230200","230300","230400","230500","230600","230700","230800","230900","231000","231100","231200","232700","320200","320300","320400","320600","320700","320800","320900","321000","321100","321200","321300","330300","330400","330500","330600","330700","330800","330900","331000","331100","340100","340200","340300","340400","340500","340600","340700","340800","341000","341100","341200","341300","341500","341600","341700","341800","350300","350400","350500","350600","350700","350800","350900","360100","360200","360300","360400","360500","360600","360700","360800","360900","361000","361100","370300","370400","370500","370600","370700","370800","370900","371000","371100","371200","371300","371400","371500","371600","371700","410200","410300","410400","410500","410600","410700","410800","410900","411000","411100","411200","411300","411400","411500","411600","411700","419001","420200","420300","420500","420600","420700","420800","420900","421000","421100","421200","421300","422800","429004","429005","429006","429021","430200","430300","430400","430500","430600","430700","430800","430900","431000","431100","431200","431300","433100","440200","440400","440500","440600","440700","440800","440900","441200","441300","441400","441500","441600","441700","441800","441900","442000","445100","445200","445300","450100","450200","450300","450400","450500","450600","450700","450800","450900","451000","451100","451200","451300","451400","460100","460200","460300","469001","469002","469003","469005","469006","469007","469021","469022","469023","469024","469025","469026","469027","469028","469029","469030","510300","510400","510500","510600","510700","510800","510900","511000","511100","511300","511400","511500","511600","511700","511800","511900","512000","513200","513300","513400","520100","520200","520300","520400","520500","520600","522300","522600","522700","530100","530300","530400","530500","530600","530700","530800","530900","532300","532500","532600","532800","532900","533100","533300","533400","540100","540200","542100","542200","542400","542500","542600","610200","610300","610400","610500","610600","610700","610800","610900","611000","620100","620200","620300","620400","620500","620600","620700","620800","620900","621000","621100","621200","622900","623000","630100","630200","632200","632300","632500","632600","632700","632800","640100","640200","640300","640400","640500","650100","650200","652100","652200","652300","652700","652800","652900","653000","653100","653200","654000","654200","654300","659001","659002","659003","659004","659005","659006","659007","659008","659009"]",
+                        "travel_area":"[]",
+                        "area_type":"area",
+                        "gender":"["MALE"]",
+                        "age":"["30~66"]",
+                        "device_brand_model":"[]",
+                        "businessinterest":"[]",
+                        "app_behavior":"{}",
+                        "os":"[]",
+                        "marriage_status":"[]",
+                        "wechatflowclass":"[]",
+                        "connection":"[]",
+                        "telcom":"[]",
+                        "payment":"[]",
+                        "custom_poi":"[]",
+                        "weapp_version":"{"min_ios_version":0,"min_android_version":0}",
+                        "oversea":"[]",
+                        "in_dmp_audience":"[]",
+                        "not_in_dmp_audience":"[]",
+                        "behavior_interest":"{}"
+                    }
+                }
+            ]
+        },
+        {
+            "target_group":{
+                "mp_conf":"{"original_age":[14,66],"poi_show":0,"version":[],"city_level":2,"show_area":[2],"custom_poi":[],"ocpm_type":[0],"import_target_used":false,"dmp_type":"","selected_ocpm_item":{"bat_desc":"元/点击","bid_action_type":2,"bid_objective":2,"bo_desc":"获取更多点击量","max_bid":50,"min_bid":0.5,"permission":1},"bid_action_type":"ocpm"}"
+            },
+            "ad_groups":[
+                {
+                    "ad_group":{
+                        "aid":1845967811,
+                        "aname":"TESTAD2",
+                        "timeset":"",
+                        "product_id":"",
+                        "end_time":1558108799,
+                        "begin_time":1555516800,
+                        "strategy_opt":"{"bid_objective":2,"bid_action_type":2}",
+                        "bid":50,
+                        "budget":100000,
+                        "day_budget":100000,
+                        "contract_flag":2,
+                        "pos_type":999,
+                        "exposure_frequency":6,
+                        "poi":"",
+                        "expand_targeting_switch":"EXPAND_TARGETING_SWITCH_CLOSE",
+                        "expand_targeting_setting":"[]"
+                    },
+                    "ad_target":{
+                        "mid":1845967810,
+                        "ad_behavior":"[{"in_action_list":[],"not_in_action_list":[]}]",
+                        "education":"[]",
+                        "device_price":"[]",
+                        "area":"["120000","210100","210200","230100","320100","320500","330100","330200","350100","350200","370100","370200","410100","420100","430100","440100","440300","500000","510100","610100"]",
+                        "travel_area":"[]",
+                        "area_type":"area",
+                        "gender":"[]",
+                        "age":"["30~66"]",
+                        "device_brand_model":"[]",
+                        "businessinterest":"[]",
+                        "app_behavior":"{}",
+                        "os":"[]",
+                        "marriage_status":"[]",
+                        "wechatflowclass":"[]",
+                        "connection":"[]",
+                        "telcom":"[]",
+                        "payment":"[]",
+                        "custom_poi":"[]",
+                        "weapp_version":"{"min_ios_version":0,"min_android_version":0}",
+                        "oversea":"[]",
+                        "in_dmp_audience":"[]",
+                        "not_in_dmp_audience":"[]",
+                        "behavior_interest":"{}"
+                    }
+                }
+            ]
+        }
+    ],
+    "expected_ret":0,
+    "materials":[
+        {
+            "tname":"创意-20190418",
+            "crt_size":666,
+            "rid":1845967813
+        }
+    ]
+}
+token: 2448821415
+appid: 
+spid: 
+_: 1555563611785
+
+// 更新创意
+Request URL: https://mp.weixin.qq.com/promotion/v3/update_material
+Request Method: POST
+
+Header
+Referer: https://mp.weixin.qq.com/promotion/frame?t=ad_system/common_simple_frame&t1=campaign/edit&token=4108290888&cid=1845967806&pos_type=999
+
+FormData
+args: 
+//图片
+{
+    "cid":1845967806,
+    "pos_type":999,
+    "materials":[
+        {
+            "rid":1845967813,
+            "cid":1845967806,
+            "desc":"驱赶蚊虫鼠蚁有妙招，超声波驱虫器，通电50米内无蚊虫",
+            "link_hidden":0,
+            "link_name":"去逛逛",
+            "is_show_friend":0,
+            "interaction":0,
+            "crt_size":666,
+            "tname":"创意-常规广告-20190418",
+            "page_id":0,
+            "link_page_id":1798101856,
+            "page_type":9,
+            "link_page_type":25,
+            "dest_conf":"{}",
+            "ext_click_url":"",
+            "ext_exposure_url":"",
+            "dest_url":"https://7aa68d3b.fyeds8.com/?r_id=1798101856_e74bab4ae&pagetype=SINGLE&_bid=2759",
+            "appmsg_info":"",
+            "title":"",
+            "scheme_url":"",
+            "is_hidden_comment":0,
+            "crt_info": [
+                {
+                    "image_url":"http://wxsnsdythumb.wxs.qq.com/109/20204/snsvideodownload?m=da614f1f37fcea0c527ea7165766f3d9&filekey=30340201010420301e02016d040253480410da614f1f37fcea0c527ea7165766f3d9020300e3fa040d00000004627466730000000131&hy=SH&storeid=32303139303431383133313532373030303338653237313336666664393337303561333230613030303030303664&bizid=1023",
+                    "thumb_url":"http://wxsnsdythumb.wxs.qq.com/109/20204/snsvideodownload?m=da614f1f37fcea0c527ea7165766f3d9&filekey=30340201010420301e02016d040253480410da614f1f37fcea0c527ea7165766f3d9020300e3fa040d00000004627466730000000131&hy=SH&storeid=32303139303431383133313532373030303338653237313336666664393337303561333230613030303030303664&bizid=1023",
+                    "height":800,
+                    "width":800,
+                    "size":58362,
+                    "materialId":"0"
+                }
+            ]
+        }
+    ],
+    "product":{
+        "product_id":"",
+        "product_type":"PRODUCTTYPE_WECHAT_SHOP"
+    },
+    "additional_args":{
+        "simple_share_title":"驱赶蚊虫鼠蚁有妙招",
+        "simple_share_desc":"超声波驱虫器，通电50米内无蚊虫"
+    }
+}
+
+//视频
+{
+    "cid":1845967806,
+    "pos_type":999,
+    "materials":[
+        {
+            "rid":1845967813,
+            "cid":1845967806,
+            "desc":"驱赶蚊虫鼠蚁有妙招，超声波驱虫器，通电50米内无蚊虫",
+            "link_hidden":0,
+            "link_name":"去逛逛",
+            "is_show_friend":0,
+            "interaction":0,
+            "crt_size":888,
+            "tname":"创意-常规广告-20190418",
+            "page_id":1753391827,
+            "link_page_id":1798101856,
+            "page_type":9,
+            "link_page_type":25,
+            "dest_conf":"{}",
+            "ext_click_url":"",
+            "ext_exposure_url":"",
+            "dest_url":"https://7aa68d3b.fyeds8.com/?r_id=1798101856_e74bab4ae&pagetype=SINGLE&_bid=2759",
+            "appmsg_info":"{}",
+            "title":"",
+            "scheme_url":"",
+            "is_hidden_comment":0,
+            "crt_info": [ //json字符串
+                {
+                    "button_hidden_flag":0,
+                    "button_name":"了解更多",
+                    "button_url":"",
+                    "video_button_link_type":1,
+                    "video_button_page_id":0,
+                    "use_long_video":false,
+                    "short_video":{
+                        "thumb_height":480,
+                        "thumb_md5":"825cf5e5091eb900b9b0d9efca34976e",
+                        "thumb_size":33714,
+                        "thumb_url":"http://wxsnsdythumb.wxs.qq.com/109/20250/snsvideodownload?m=825cf5e5091eb900b9b0d9efca34976e&filekey=30340201010420301e02016d040253480410825cf5e5091eb900b9b0d9efca34976e02030083b2040d00000004627466730000000131&hy=SH&storeid=32303139303431393131313230353030303837623634313336666664393330323561333230613030303030303664&bizid=1023",
+                        "thumb_width":640,
+                        "video_duration":14,
+                        "video_md5":"e7c7969755b213808d5f0a7dcec4c0a7",
+                        "video_size":1440289,
+                        "video_url":"http://wxsnsdy.wxs.qq.com/105/20210/snsdyvideodownload?m=e7c7969755b213808d5f0a7dcec4c0a7&filekey=30340201010420301e020169040253480410e7c7969755b213808d5f0a7dcec4c0a7020315fa21040d00000004627466730000000131&hy=SH&storeid=32303139303431393131313230353030303934356535313336666664393330323561333230613030303030303639&bizid=1023",
+                        "materialId":"0",
+                        "raw_thumb_url":"http://wxsnsdythumb.wxs.qq.com/109/20250/snsvideodownload?m=825cf5e5091eb900b9b0d9efca34976e&filekey=30340201010420301e02016d040253480410825cf5e5091eb900b9b0d9efca34976e02030083b2040d00000004627466730000000131&hy=SH&storeid=32303139303431393131313230353030303837623634313336666664393330323561333230613030303030303664&bizid=1023"
+                    },
+                    "share_flag":1,
+                    "share_text":"",
+                    "share_thumb":"",
+                    "share_thumb_material_id":""
+                }
+            ]
+        }
+    ],
+    "product":{
+        "product_id":"",
+        "product_type":"PRODUCTTYPE_WECHAT_SHOP"
+    },
+    "additional_args":{
+        "simple_share_title":"驱赶蚊虫鼠蚁有妙招",
+        "simple_share_desc":"超声波驱虫器，通电50米内无蚊虫"
+    }
+}
+token: 2448821415
+appid: 
+spid: 
+_: 1555564620742
+
+
+
+// 上传图片
+Request URL: https://mp.weixin.qq.com/promotion/landingpage/snsimage?1=1&
+Request Method: POST
+
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+Connection: keep-alive
+Content-Length: 60300
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryiYCQjtSPBA97ssJm
+Cookie: 
+Host: mp.weixin.qq.com
+Origin: https://mp.weixin.qq.com
+Referer: https://mp.weixin.qq.com/promotion/frame?t=ad_system/common_simple_frame&t1=campaign/edit&token=2448821415&from_pos_type=999
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+
+FormData
+token: 2448821415
+f: json
+action: update_sns_crt_image
+cid: 0
+is_single: 1
+check: 1
+min_width: 640
+max_width: 800
+min_height: 640
+max_height: 800
+id: WU_FILE_0
+name: snsvideodownload.jpeg
+type: image/jpeg
+lastModifiedDate: Thu Apr 18 2019 13:08:34 GMT 0800 (中国标准时间)
+size: 58362
+chunk: 0
+chunks: 1
+image_file: （binary）
+
+Response
+{
+    "base_resp":{
+        "ret":0,
+        "err_msg":"ok"
+    },
+    "image_info":{
+        "image_url":"http://wxsnsdythumb.wxs.qq.com/109/20204/snsvideodownload?m=da614f1f37fcea0c527ea7165766f3d9&filekey=30340201010420301e02016d040253480410da614f1f37fcea0c527ea7165766f3d9020300e3fa040d00000004627466730000000131&hy=SH&storeid=32303139303431383133313532373030303338653237313336666664393337303561333230613030303030303664&bizid=1023",
+        "thumb_url":"http://wxsnsdythumb.wxs.qq.com/109/20204/snsvideodownload?m=da614f1f37fcea0c527ea7165766f3d9&filekey=30340201010420301e02016d040253480410da614f1f37fcea0c527ea7165766f3d9020300e3fa040d00000004627466730000000131&hy=SH&storeid=32303139303431383133313532373030303338653237313336666664393337303561333230613030303030303664&bizid=1023",
+        "height":800,
+        "width":800,
+        "size":58362
+    }
+}
+
+// 上传视频
+Request URL: https://mp.weixin.qq.com/promotion/landingpage/snsvideo?1=1
+Request Method: POST
+
+Header
+Referer: https://mp.weixin.qq.com/promotion/frame?t=ad_system/common_simple_frame&t1=campaign/edit&token=2448821415&from_pos_type=999
+
+FormData
+token: 2448821415
+f: json
+action: upload
+video_type: 3
+media_arg: {"px":[{"max_w":640,"min_w":640,"max_h":480,"min_h":480}],"size":{"min":1782579.2,"max":1782579.2},"duration":{"max":15000,"min":6000},"profile":"Main","bitRate":819200}
+material_pos_type: 1
+id: WU_FILE_1
+name: snsdyvideodownload.mp4
+type: video/mp4
+lastModifiedDate: Tue Apr 16 2019 19:49:22 GMT 0800 (中国标准时间)
+size: 1440289
+chunk: 0
+chunks: 1
+video_file: (binary)
+
+Response
+{
+    "base_resp":{
+        "err_msg":"ok",
+        "ret":0
+    },
+    "data":{
+        "thumb_height":480,
+        "thumb_md5":"825cf5e5091eb900b9b0d9efca34976e",
+        "thumb_size":33714,
+        "thumb_url":"http://wxsnsdythumb.wxs.qq.com/109/20250/snsvideodownload?m=825cf5e5091eb900b9b0d9efca34976e&filekey=30340201010420301e02016d040253480410825cf5e5091eb900b9b0d9efca34976e02030083b2040d00000004627466730000000131&hy=SH&storeid=32303139303431383133313234333030306239383764313336666664393330323561333230613030303030303664&bizid=1023",
+        "thumb_width":640,
+        "video_duration":14,
+        "video_md5":"e7c7969755b213808d5f0a7dcec4c0a7",
+        "video_size":1440289,
+        "video_url":"http://wxsnsdy.wxs.qq.com/105/20210/snsdyvideodownload?m=e7c7969755b213808d5f0a7dcec4c0a7&filekey=30340201010420301e020169040253480410e7c7969755b213808d5f0a7dcec4c0a7020315fa21040d00000004627466730000000131&hy=SH&storeid=32303139303431383133313234333030306261663532313336666664393330323561333230613030303030303639&bizid=1023"
+    },
+    "standard_flag":0
+}
+
+// 落地页信息
+Request URL: https://mp.weixin.qq.com/promotion/landingpage_manager?page_id=1798101856&action=get_goods_page_detail&token=4108290888&appid=&spid=&_=1555747768703
+Request Method: GET
+
+Header
+Referer: https://mp.weixin.qq.com/promotion/frame?t=ad_system/common_simple_frame&t1=campaign/edit&token=4108290888&cid=1848394996&pos_type=999
+
+Response
+{
+    "code":0,
+    "data":{
+        "page":{
+            "createdAt":"2019-03-16 06:30:13",
+            "pageId":1798101856,
+            "pageName":"驱鼠器-2/99",
+            "pageRId":"1798101856_e74bab4ae",
+            "pageTitle":"全效驱鼠蚊虫器，黑科技官方活动！",
+            "pageUrl":"https://7aa68d3b.fyeds8.com/?r_id=1798101856_e74bab4ae&pagetype=SINGLE&_bid=2759"
+        }
+    },
+    "message":"page",
+    "ret":0
+}

@@ -1,0 +1,7 @@
+vendor/
+uploads/
+logs/
+error/
+data/
+backup/
+.vscode/

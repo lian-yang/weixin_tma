@@ -1,0 +1,12 @@
+{
+    "name": "yanglian/tma",
+    "authors": [
+        {
+            "name": "LianYang",
+            "email": "395486566@qq.com"
+        }
+    ],
+    "require": {
+        "codeguy/upload": "^1.3"
+    }
+}
