@@ -43,10 +43,11 @@ try {
             die(json_encode($response));
         }
         $campaign_template = get_campaign_info($mp_appid, $campaign_tpl_id);
-        $materials_template = $campaign_template['materials'][0];
-        $share_info = get_share_info($mp_appid, $materials_template['page_id']);
-        //print_r($share_info);die;
         //die(json_encode($campaign_template, 320));
+        $materials_template = $campaign_template['materials'][0];
+        if($materials_template['page_id']) {
+            $share_info = get_share_info($mp_appid, $materials_template['page_id'], $campaign_tpl_id);
+        }
         $mp_info = get_mp($mp_appid);
         $changed = 0;
         for ($i = 1; $i <= $num; $i++) {
@@ -203,8 +204,8 @@ try {
                     'product_type' => $campaign_template['product']['product_type']
                 ],
                 'additional_args' => [
-                    'simple_share_title' => $share_info['shareTitle'],
-                    'simple_share_desc' => $share_info['shareDesc'],
+                    'simple_share_title' => isset($share_info['shareTitle']) ? $share_info['shareTitle'] : '',
+                    'simple_share_desc' => isset($share_info['shareDesc']) ? $share_info['shareDesc'] : '',
                 ]
             ];
             $post_data['args'] = json_encode($args, 320);
@@ -403,7 +404,7 @@ try {
                 },
                 error: function(err) {
                     console.log(err);
-                    Helper.ui.notice({ title: err.responseJSON.code + ' ' + err.responseJSON.message, type: "error", autoClose: 3000 });
+                    Helper.ui.dialogError("发生错误", err.responseJSON.message);
                 },
                 complete: function() {
                     self.prop('disabled', false).text('提交');

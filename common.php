@@ -486,6 +486,7 @@ function get_share_info($appid, $page_id, $campaign_id = '')
         'X-Requested-With: XMLHttpRequest'
     ]);
     $result = json_decode($response, true);
+    //print_r($result);die;
     if ($result['ret'] > 0) {
         throw new Exception($result['err_msg'], $result['ret']);
     }
